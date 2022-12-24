@@ -9,6 +9,7 @@ function windowLoad(){
 
 	//ゲームに使う画像の読み込み
 	/* ここに入力1 (プレイヤーの画像の読み込み)*/
+  game.preload("player.png");//プレイヤー
 	game.preload("enemy.png");//敵キャラ
 	game.preload("shot1.png");//プレイヤーの攻撃その1
 	game.preload("shot2.png");//プレイヤーの攻撃その2
@@ -23,6 +24,10 @@ function windowLoad(){
 	//キーボードの登録
 
 	/* ここに入力2 ボタン設定 */
+// キーボードのzをゲームのAボタンにする
+game.keybind(90, "a");
+// キーボードのxをゲームのBボタンにする
+game.keybind(88, "b");
 
 	//ゲームの起動準備
 	game.onload=function()
